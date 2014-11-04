@@ -8,11 +8,11 @@ class Warden::Strategies::Doorkeeper < ::Warden::Strategies::Base
   def initialize(env, scope=nil)
     super
 
-    @token = OAuth::Token.authenticate request, *Doorkeeper.configuration.access_token_methods
     @scope = scope
   end
 
   def valid?
+    @token = OAuth::Token.authenticate(request, *Doorkeeper.configuration.access_token_methods)
     @token && @token.accessible? && @token.acceptable?(@scope)
   end
 
