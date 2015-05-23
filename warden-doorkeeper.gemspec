@@ -5,6 +5,7 @@ require "warden/strategies/doorkeeper"
 Gem::Specification.new do |s|
   s.name        = "warden-doorkeeper"
   s.version     = Warden::Strategies::Doorkeeper::VERSION
+  s.licenses    = ["MIT"]
   s.authors     = ["Tyler Margison"]
   s.email       = "kolorahl@gmail.com"
   s.homepage    = "https://github.com/kolorahl/warden-doorkeeper"
