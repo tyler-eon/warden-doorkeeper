@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = "kolorahl@gmail.com"
   s.homepage    = "https://github.com/kolorahl/warden-doorkeeper"
   s.summary     = "Integration with Doorkeeper."
-  s.description = "Integration with Doorkeeper."
+  s.description = "Integration with Doorkeeper, an OAuth 2.0 provider."
 
   s.files = Dir["lib/**/*", "LICENSE", "README.md"]
 
