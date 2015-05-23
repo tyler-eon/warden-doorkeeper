@@ -13,5 +13,5 @@ Gem::Specification.new do |s|
 
   s.files = Dir["lib/**/*", "LICENSE", "README.md"]
 
-  s.add_dependency "warden", "~> 1.2"
+  s.add_runtime_dependency "warden", "~> 1.2"
 end
